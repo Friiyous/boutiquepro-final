@@ -1,0 +1,57 @@
+export const MOCK_BOUTIQUE = {
+    id: 'b1',
+    nom: 'Sonia Fashion',
+    slug: 'sonia-fashion',
+    description: 'La mode chic et abordable à Abidjan. Retrouvez les dernières tendances de Paris à Cocody.',
+    logo_url: 'https://images.unsplash.com/photo-1541339907198-e08756ebafe3?w=200&h=200&fit=crop',
+    couverture_url: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&h=400&fit=crop',
+    ville: 'Abidjan',
+    quartier: 'Cocody Riviera 3',
+    categories: ['Chic', 'Abordable', 'Unique'],
+    whatsapp: '+2250707070707',
+}
+
+export const MOCK_PRODUITS = [
+    {
+        id: 'p1',
+        boutique_id: 'b1',
+        nom: 'Robe d\'été Fleurie',
+        description: 'Une robe légère et élégante, parfaite pour les sorties ensoleillées à Assinie.',
+        prix: 15000,
+        prix_promo: 12500,
+        image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=500&h=500&fit=crop',
+        categorie: 'Prêt-à-porter',
+        stock: 12,
+    },
+    {
+        id: 'p2',
+        boutique_id: 'b1',
+        nom: 'Sac à main Cuir Noir',
+        description: 'Sac à main en cuir véritable, alliant luxe et praticité pour vos rendez-vous business.',
+        prix: 35000,
+        image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=500&h=500&fit=crop',
+        categorie: 'Accessoires',
+        stock: 5,
+    },
+    {
+        id: 'p3',
+        boutique_id: 'b1',
+        nom: 'Escarpins Velours Rouge',
+        description: 'Faites sensation avec ces escarpins en velours. Confortables et tendances.',
+        prix: 25000,
+        prix_promo: 20000,
+        image: 'https://images.unsplash.com/photo-1543163532-173079df3503?w=500&h=500&fit=crop',
+        categorie: 'Chaussures',
+        stock: 8,
+    },
+    {
+        id: 'p4',
+        boutique_id: 'b1',
+        nom: 'Ensemble Tailleur Blanc',
+        description: 'L\'élégance pure pour vos événements spéciaux ou le bureau.',
+        prix: 45000,
+        image: 'https://images.unsplash.com/photo-1548142813-c348350df52b?w=500&h=500&fit=crop',
+        categorie: 'Prêt-à-porter',
+        stock: 3,
+    }
+]
