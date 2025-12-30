@@ -82,13 +82,13 @@ export default function RegisterPage() {
                                         <h2 className="text-xl font-bold text-boutique-dark">Mes Informations</h2>
                                         <div className="grid gap-4">
                                             <Input name="fullName" value={formData.fullName} onChange={handleInputChange} type="text" placeholder="Nom complet" className="bg-gray-50 border-none rounded-2xl py-7 h-auto focus-visible:ring-2 focus-visible:ring-boutique-orange/20" />
-                                            {state?.error?.fullName && <p className="text-red-500 text-[10px] font-bold ml-2">{state.error.fullName}</p>}
+                                            {state?.error && typeof state.error !== 'string' && state.error.fullName && <p className="text-red-500 text-[10px] font-bold ml-2">{state.error.fullName}</p>}
 
                                             <Input name="email" value={formData.email} onChange={handleInputChange} type="email" placeholder="Email" className="bg-gray-50 border-none rounded-2xl py-7 h-auto focus-visible:ring-2 focus-visible:ring-boutique-orange/20" />
-                                            {state?.error?.email && <p className="text-red-500 text-[10px] font-bold ml-2">{state.error.email}</p>}
+                                            {state?.error && typeof state.error !== 'string' && state.error.email && <p className="text-red-500 text-[10px] font-bold ml-2">{state.error.email}</p>}
 
                                             <Input name="whatsapp" value={formData.whatsapp} onChange={handleInputChange} type="tel" placeholder="Numéro WhatsApp" className="bg-gray-50 border-none rounded-2xl py-7 h-auto focus-visible:ring-2 focus-visible:ring-boutique-orange/20" />
-                                            {state?.error?.whatsapp && <p className="text-red-500 text-[10px] font-bold ml-2">{state.error.whatsapp}</p>}
+                                            {state?.error && typeof state.error !== 'string' && state.error.whatsapp && <p className="text-red-500 text-[10px] font-bold ml-2">{state.error.whatsapp}</p>}
                                         </div>
                                     </div>
                                     <Button
@@ -114,7 +114,7 @@ export default function RegisterPage() {
                                         <h2 className="text-xl font-bold text-boutique-dark">Ma Boutique</h2>
                                         <div className="grid gap-4">
                                             <Input name="shopName" value={formData.shopName} onChange={handleInputChange} type="text" placeholder="Nom de la boutique" className="bg-gray-50 border-none rounded-2xl py-7 h-auto focus-visible:ring-2 focus-visible:ring-boutique-orange/20" />
-                                            {state?.error?.shopName && <p className="text-red-500 text-[10px] font-bold ml-2">{state.error.shopName}</p>}
+                                            {state?.error && typeof state.error !== 'string' && state.error.shopName && <p className="text-red-500 text-[10px] font-bold ml-2">{state.error.shopName}</p>}
 
                                             <select name="category" value={formData.category} onChange={handleInputChange} className="w-full bg-gray-50 border-none rounded-2xl py-4 px-6 focus:ring-2 focus:ring-boutique-orange/20 outline-none text-gray-500 font-bold">
                                                 <option value="">Catégorie de produits</option>
@@ -122,10 +122,10 @@ export default function RegisterPage() {
                                                 <option value="Electro">Électronique</option>
                                                 <option value="Maison">Maison & Déco</option>
                                             </select>
-                                            {state?.error?.category && <p className="text-red-500 text-[10px] font-bold ml-2">{state.error.category}</p>}
+                                            {state?.error && typeof state.error !== 'string' && state.error.category && <p className="text-red-500 text-[10px] font-bold ml-2">{state.error.category}</p>}
 
                                             <Input name="city" value={formData.city} onChange={handleInputChange} type="text" placeholder="Ville (ex: Abidjan)" className="bg-gray-50 border-none rounded-2xl py-7 h-auto focus-visible:ring-2 focus-visible:ring-boutique-orange/20" />
-                                            {state?.error?.city && <p className="text-red-500 text-[10px] font-bold ml-2">{state.error.city}</p>}
+                                            {state?.error && typeof state.error !== 'string' && state.error.city && <p className="text-red-500 text-[10px] font-bold ml-2">{state.error.city}</p>}
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
@@ -156,7 +156,7 @@ export default function RegisterPage() {
                                         <h2 className="text-xl font-bold text-boutique-dark">Sécurité</h2>
                                         <div className="grid gap-4">
                                             <Input name="password" value={formData.password} onChange={handleInputChange} type="password" placeholder="Mot de passe" className="bg-gray-50 border-none rounded-2xl py-7 h-auto focus-visible:ring-2 focus-visible:ring-boutique-orange/20" />
-                                            {state?.error?.password && <p className="text-red-500 text-[10px] font-bold ml-2">{state.error.password}</p>}
+                                            {state?.error && typeof state.error !== 'string' && state.error.password && <p className="text-red-500 text-[10px] font-bold ml-2">{state.error.password}</p>}
 
                                             <Input name="confirmPassword" value={formData.confirmPassword} onChange={handleInputChange} type="password" placeholder="Confirmer le mot de passe" className="bg-gray-50 border-none rounded-2xl py-7 h-auto focus-visible:ring-2 focus-visible:ring-boutique-orange/20" />
                                         </div>
