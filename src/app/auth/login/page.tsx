@@ -60,7 +60,7 @@ export default function LoginPage() {
                                     placeholder="votre@email.com"
                                     className="pl-12 bg-gray-50 border-none rounded-2xl py-7 h-auto focus-visible:ring-2 focus-visible:ring-boutique-orange/20"
                                 />
-                                {state?.error?.email && (
+                                {state?.error && typeof state.error !== 'string' && state.error.email && (
                                     <p className="text-red-500 text-[10px] mt-1 ml-1 font-bold">{state.error.email}</p>
                                 )}
                             </div>
@@ -80,7 +80,7 @@ export default function LoginPage() {
                                     placeholder="••••••••"
                                     className="pl-12 bg-gray-50 border-none rounded-2xl py-7 h-auto focus-visible:ring-2 focus-visible:ring-boutique-orange/20"
                                 />
-                                {state?.error?.password && (
+                                {state?.error && typeof state.error !== 'string' && state.error.password && (
                                     <p className="text-red-500 text-[10px] mt-1 ml-1 font-bold">{state.error.password}</p>
                                 )}
                             </div>
